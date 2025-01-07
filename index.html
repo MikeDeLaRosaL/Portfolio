@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portafolio - Miguel De La Rosa</title>
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Miguel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/foto2.png" alt="Miguel De La Rosa">
+            </div>
+            <h1>Miguel De La Rosa</h1>
+            <h2>Pasante en tecnologías de la información.</h2>
+            <div class="redes">
+                <a href="https://instagram.com/the_mike0328?igshid=MzMyNGUyNmU2YQ=="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/MikeDeLaRosaL"><i class="fa-brands fa-github"></i></a>
+                <a href="http://linkedin.com/in/miguel-enrique-de-la-rosa-lopez-2b7b0626b"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Miguel De La Rosa.</span> Pasante en Tecnologías de la Información con 6 años de
+                experiencia en mantenimiento de equipos de cómputo.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Edad</strong>
+                            23 Años
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            55-24-47-26-23
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <a href="mailto:mikedelarosa0430@gmail.com"
+                                style="color: white;">mikedelarosa0430@gmail.com</a>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Sierra Hermosa, Tecámac.
+                            Estado de México, 55749.
+
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button>
+            <a class="descargas" href="./resources/CV Miguel.pdf" download="CV Miguel.pdf">
+                Descargar CV
+                <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+        </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Lenguajes de Programación</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React.js</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TypeScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL, SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>- Comunicación</span>
+                        <span>- Trabajo en Equipo</span>
+                        <span>- Trabajo Individual</span>
+                        <span>- Buena Disciplina</span>
+                        <span>- Buena Actitud al trabajo y/o tareas</span>
+                        <br><br>
+                        <span>Soy excelente en cuanto a mantenimiento de equipos de cómputo, creación de cableado de
+                            red, creación de bases de datos, soporte y administración de recursos informáticos.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Tecnologías de la Información</h4>
+                        <span class="casa">Universidad Autónoma del Estado de Hidalgo</span>
+                        <span class="fecha">2019-Actualmente</span>
+                        <p>Pasante en Tecnologías de la Información</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico en Programación</h4>
+                        <span class="casa">Colegio de Estudios Científicos Y Tecnológicos del Estado de México</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Técnico en Programación</p>
+                        <p>No. Titulo: 00001000000504181301</p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Dev Full Stack</h4>
+                        <span class="casa">Teseo Data Lab</span>
+                        <span class="fecha">Enero 2024 - Diciembre 2024 </span>
+                        <p>Analista de datos con IA, Desarrollador de proyectos desde 0 implementando estrategias para
+                            la implementación de los proyectos y desplegar en producción consumiendo APIs de pago como
+                            STRIPE.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Auxiliar en centro de cómputo</h4>
+                        <span class="casa">UAEH - Tizayuca</span>
+                        <span class="fecha">Julio 2023 - Diciembre 2023 </span>
+                        <p>Mantenimiento Preventivo y Correctivo en equipos de cómputo, realizando pruebas, para saber
+                            dónde está el problema. Teniendo todo esto hecho puedo empezar a trabajar sobre la falla y
+                            solucionarla de la manera más eficiente posible.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar de la dependencia de Sierra Hermosa</h4>
+                        <span class="casa">Presidencia Tecámac - Sierra Hermosa</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Reportes de tomas de agua, postes de luz.</p>
+                        <p>Reportes de casas invadidas.</p>
+                        <p>Sellado y entrega de Actas.</p>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION Portafolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Certificaciones, Cursos y Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./resources/microsoft.png" alt="Office">
+                    <div class="overlay">
+                        <h3>Microsoft Office Specialist</h3>
+                        <p>Certificación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./resources/scrum.png" alt="Scrum">
+                    <div class="overlay">
+                        <h3>Scrum Foundation Professional Certification SFPC</h3>
+                        <p>Certificación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./resources/ciberseguridad.png" alt="Ciberseguridad">
+                    <div class="overlay">
+                        <h3>Fundamentos de Ciberseguridad</h3>
+                        <p>Curso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <!-- <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <br><br><br>
+            <div class="fila">
+                
+                <div class="col">
+                    <div class="info">
+                        <ul>
+                            
+                            <li>
+                                <i class="fa-solid fa-person"></i>
+                                Abigail García Flores (Lic. en Innovación de negocios y mercadotecnia).<br>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Marca al: +52 56-13-61-34-23 <br>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:abigailgarciaflo@gmail.com"
+                                    style="color: white;">abigailgarciaflo@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-person"></i>
+                                Evangelina León Lezama (Profesora de la UAEH).<br>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Marca al: +52 77-11-96-67-44 <br>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:evangeli@uaeh.edu.mx" style="color: white;">evangeli@uaeh.edu.mx</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-person"></i>
+                                José de Jesús Balderas Valtierra (Almacenista).<br>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Marca al: +52 55-87-77-72-10 <br>
+                            </li>
+
+                        </ul>
+                        <br><br><br>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Sierra Hermosa, Tecámac.
+                                Estado de México, 55749.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Marca al: 55-24-47-26-23
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:mikedelarosa0430@gmail.com"
+                                    style="color: white;">mikedelarosa0430@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+    <section id="contacto" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <!-- <h3>Educación</h3> -->
+                    <div class="item izq">
+                        <h4><i class="fa-solid fa-person"></i> - Abigail García Flores</h4>
+                        <span class="casa">Lic. en Innovación de negocios y mercadotecnia.</span>
+                        <br>
+                        <span class="fecha"><i class="fa-solid fa-mobile-screen"></i> - Tel: +52 56-13-61-34-23</span>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:abigailgarciaflo@gmail.com"
+                            style="color: white;"> - abigailgarciaflo@gmail.com</a></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4><i class="fa-solid fa-person"></i> - Evangelina León Lezama</h4>
+                        <span class="casa">Profesora de la UAEH.</span>
+                        <br>
+                        <span class="fecha"><i class="fa-solid fa-mobile-screen"></i> - Tel: +52 77-11-96-67-44</span>
+                        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:evangeli@uaeh.edu.mx" style="color: white;"> - evangeli@uaeh.edu.mx</a></p>
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4><i class="fa-solid fa-person"></i> - José de Jesús Balderas Valtierra.</h4>
+                        <span class="casa">Almacenista.</span>
+                        <br>
+                        <span class="fecha"><i class="fa-solid fa-mobile-screen"></i> - Tel: +52 55-87-77-72-10</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://instagram.com/the_mike0328?igshid=MzMyNGUyNmU2YQ=="><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/MikeDeLaRosaL"><i class="fa-brands fa-github"></i></a>
+            <a href="http://linkedin.com/in/miguel-enrique-de-la-rosa-lopez-2b7b0626b"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
